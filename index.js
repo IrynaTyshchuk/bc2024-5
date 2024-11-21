@@ -13,7 +13,7 @@ program
 const options = program.opts();
 const { host, port, cache } = options;
 
-// Перевірка кеш-директорії (якщо потрібно)
+// Перевірка кеш-директорії
 const fs = require('fs');
 if (!fs.existsSync(cache)) {
   console.error(`Кеш-директорія "${cache}" не існує!`);
