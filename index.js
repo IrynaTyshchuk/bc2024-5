@@ -111,7 +111,7 @@ app.get('/notes', async (req, res) => {
   });
 
   app.get('/UploadForm.html', (req, res) => {
-    const filePath = path.resolve('C:\Users\PC\bc2024-5\UploadForm.html');
+    const filePath = path.join('C:', 'Users', 'PC', 'bc2024-5', 'UploadForm.html');
     res.sendFile(filePath, (err) => {
       if (err) {
         console.error('Помилка при відправці файлу:', err);
